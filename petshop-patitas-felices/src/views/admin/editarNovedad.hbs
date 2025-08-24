@@ -1,0 +1,16 @@
+<!-- filepath: c:\Users\ACER\OneDrive\Desktop\ProgramadorWEB_Martes\M5U2-3\petshop-patitas-felices\src\views\admin\editarNovedad.hbs -->
+<div class="container mt-5">
+    <h2>Editar Novedad</h2>
+    <form action="/admin/novedades/editar/{{novedad.id}}" method="POST">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" id="titulo" name="titulo" class="form-control" value="{{novedad.titulo}}" required>
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion" class="form-control" value="{{novedad.descripcion}}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        <a href="/admin/novedades" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

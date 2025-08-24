@@ -1,0 +1,23 @@
+{
+  "name": "petshop-patitas-felices",
+  "version": "1.0.0",
+  "description": "A pet shop website for Patitas Felices.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "5": "^0.0.1",
+    "dotenv": "^17.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^8.0.3",
+    "express-session": "^1.18.1",
+    "hbs": "^4.2.0",
+    "md5": "^2.3.0",
+    "mysql2": "^3.14.2",
+    "nodemailer": "^7.0.4",
+    "util": "^0.12.5"
+  },
+  "author": "",
+  "license": "ISC"
+}

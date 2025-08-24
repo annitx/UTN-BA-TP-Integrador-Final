@@ -1,0 +1,148 @@
+/* Botón naranja moderno */
+.btn-orange {
+  background: linear-gradient(90deg, #ff9800 0%, #ffb74d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+}
+.btn-orange:hover, .btn-orange:focus {
+  background: linear-gradient(90deg, #ffb74d 0%, #ff9800 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 152, 0, 0.25);
+}
+
+/* Texto naranja */
+.text-orange {
+  color: #ff9800 !important;
+}
+
+/* Modern lead */
+.modern-lead {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 600px;
+  height: 70vh;
+  max-height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero content abajo del menú */
+.hero-content {
+  position: relative;
+  /*z-index: 2;*/
+  padding-top: 120px; /* Ajusta este valor según lo que necesites */
+}
+
+/* Cards categorías y servicios */
+.card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.card-img-top {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+
+/* Cards de ofertas tamaño fijo */
+.oferta-card {
+  width: 500px;
+  height: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.oferta-card .card-img-top {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.oferta-card .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Responsive padding para secciones y cards de ofertas */
+@media (max-width: 767px) {
+  .hero-content {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 540px) {
+  .oferta-card {
+    width: 100%;
+    height: auto;
+  }
+  .oferta-card .card-img-top {
+    height: 180px;
+  }
+}
+/* Hero section */
+.hero-section {
+  min-height: 600px;
+  height: 70vh;
+  max-height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Responsive: hero más alto en móvil y sin corte raro */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 380px;
+    height: 40vh;
+    max-height: 500px;
+  }
+  .hero-section img {
+    min-height: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Navbar links en naranja */
+
+.fw-bold {
+  color: #f6c30d !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  color: #ff9800 !important;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #e65100 !important;
+}
+/* Hamburguesa en naranja */
+.navbar-toggler {
+  border-color: #ff9800;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,152,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.bg-orange {
+    background-color: #ff9800 !important;
+}

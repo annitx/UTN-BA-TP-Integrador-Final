@@ -1,0 +1,36 @@
+<!-- filepath: c:\Users\ACER\OneDrive\Desktop\ProgramadorWEB_Martes\M5U2-3\petshop-patitas-felices\src\views\admin\novedades.hbs -->
+<div class="container mt-5">
+    <h1>Panel de Novedades</h1>
+    <p>Hola, <strong>{{usuario}}</strong> 👋</p>
+    <a href="/admin/login/logout" class="btn btn-danger mb-4">Cerrar sesión</a>
+
+    <h2>Agregar Novedad</h2>
+    <div class="card mb-4">
+        <div class="card-body">
+            <form action="/admin/novedades/agregar" method="POST">
+                <div class="mb-3">
+                    <input type="text" name="titulo" class="form-control" placeholder="Título" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="descripcion" class="form-control" placeholder="Descripción" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Lista de Novedades</h2>
+    <ul class="list-group">
+        {{#each novedades}}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <strong>{{titulo}}</strong>: {{descripcion}}
+                </div>
+                <div>
+                    <a href="/admin/novedades/editar/{{id}}" class="btn btn-warning btn-sm me-2">Editar</a>
+                    <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-danger btn-sm">Eliminar</a>
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</div>
