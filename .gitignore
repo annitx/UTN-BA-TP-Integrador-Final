@@ -1,8 +1,0 @@
-# Ignorar node_modules de la raíz
-/node_modules/
-
-# Ignorar node_modules dentro de petshop-patitas-felices
-/petshop-patitas-felices/node_modules/
-
-# Ignorar archivos de entorno
-.env
